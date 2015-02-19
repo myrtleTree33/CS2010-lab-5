@@ -1,0 +1,22 @@
+CS2010 Lab 5 - Construction of Huffman tree
+=================================================
+
+## Generation of `jar`
+
+To generate, run
+
+    $ mvn install
+    
+## Running test cases
+
+    $ mvn test
+
+## Description of samples
+
+Boundary test cases were tested, and deployed in junit and main routine.  They are:
+
+- Sample 1: Base test case
+- Sample 2: Testing of empty set
+- Sample 3: Testing of single element
+- Sample 4: Testing where the key are numbers
+- Sample 5: Testing where the number of counts are duplicated.

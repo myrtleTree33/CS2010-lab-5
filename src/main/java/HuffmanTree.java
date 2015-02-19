@@ -58,6 +58,10 @@ public class HuffmanTree {
     }
 
     public void print() {
+        if (root == null) {
+            System.out.println("Huffman tree empty.");
+            return;
+        }
         System.out.println(root.toString());
     }
 
@@ -78,10 +82,13 @@ public class HuffmanTree {
     }
 
     public static void main(String[] args) throws Exception {
+        String[] filenames = {"sample1.txt", "sample2.txt","sample3.txt", "sample4.txt", "sample5.txt"};
         HuffmanTree tree = null;
         try {
-            tree = new HuffmanTree(new Scanner(new File("sample1.txt")));
-            tree.print();
+            for (String filename : filenames) {
+                tree = new HuffmanTree(new Scanner(new File(filename)));
+                tree.print();
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

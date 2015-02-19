@@ -29,7 +29,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>TestBinarySearchTree</mainClass>
+                            <mainClass>HuffmanTree</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

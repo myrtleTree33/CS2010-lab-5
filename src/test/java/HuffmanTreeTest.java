@@ -36,5 +36,23 @@ public class HuffmanTreeTest {
         }
 //    fail("Not yet implemented");
     }
+    
+    @Test
+    public void testHuffmanTree() {
+        String[] filenames = {"sample1.txt", "sample2.txt","sample3.txt", "sample4.txt", "sample5.txt"};
+        HuffmanTree tree = null;
+        try {
+            for (String filename : filenames) {
+                System.out.println("=============================");
+                System.out.println("Running test=" + filename);
+                System.out.println("=============================");
+                tree = new HuffmanTree(new Scanner(new File(filename)));
+                tree.print();
+                System.out.println("===================");
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
